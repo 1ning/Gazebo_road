@@ -32,4 +32,7 @@
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
           args="-urdf -model mrobot -param robot_description"/> 
 
+    <!-- Load the follow publisher -->
+    <node name="publish_follow_target" pkg="publish_follow_target" type="publish_follow_target" output="screen" />
+
 </launch>

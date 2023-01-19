@@ -15,7 +15,7 @@
     </light>
   <!-- walking person -->
   <!-- The code to set the track is on line 134-->
-  <actor name="actor">
+  <actor name="actor_1">
     <plugin name="actor_collisions_plugin" filename="libActorCollisionsPlugin.so">
       <scaling collision="LHipJoint_LeftUpLeg_collision" scale="
         0.01
