@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   people_msgs
   roscpp
   rospy
+  tf2
+  tf2_ros
 )
 
 ## System dependencies are found with CMake's conventions
@@ -148,6 +150,17 @@ add_executable(publish_follow_target src/publish_follow_target.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(publish_follow_target
+  ${catkin_LIBRARIES}
+)
+
+
+add_executable(robot_transform_broadcaster src/robot_transform_broadcaster.cpp)
+target_link_libraries(robot_transform_broadcaster
+  ${catkin_LIBRARIES}
+)
+
+add_executable(crosswalk_transform_broadcaster src/crosswalk_transform_broadcaster.cpp)
+target_link_libraries(crosswalk_transform_broadcaster
   ${catkin_LIBRARIES}
 )
 

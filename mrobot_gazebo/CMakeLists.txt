@@ -10,6 +10,8 @@ find_package(catkin REQUIRED COMPONENTS
   gazebo_ros_control
   roscpp
   rospy
+  tf2
+  tf2_ros
 )
 
 ## System dependencies are found with CMake's conventions

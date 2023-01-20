@@ -35,4 +35,7 @@
     <!-- Load the follow publisher -->
     <node name="publish_follow_target" pkg="publish_follow_target" type="publish_follow_target" output="screen" />
 
+    <!-- Publish the crosswalk transform -->
+    <node name="crosswalk_transform_broadcaster" pkg="publish_follow_target" type="crosswalk_transform_broadcaster" output="screen" />
+
 </launch>
